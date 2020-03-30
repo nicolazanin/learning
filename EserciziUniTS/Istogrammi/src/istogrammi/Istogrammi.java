@@ -42,7 +42,7 @@ public class Istogrammi {
         for (int i = 0; i < contatore.length; i++) {
             System.out.print("numero " + i + ": ");
             for (int j = 0; j < contatore[i]; j++) {
-                System.out.print("°");
+                System.out.print("*");
             }
             System.out.println();
         }
