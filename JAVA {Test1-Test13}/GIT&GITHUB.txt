@@ -1,0 +1,58 @@
+
+---GIT & GITHUB---
+
+--inizializzare
+-vai nella cartella che hai scelto
+-dalla console scrivi, "change directory" 
+        git cd (trascina la cartella così si genara il percorso)
+-dalla console, crea i file nascosti.git
+	git init
+
+--comandi--
+-dalla console, per vedere i file della cartella, a sta per all
+	ls -a	
+-dalla console, per vedere il percorso cartelle
+	pwd
+-dalla console, vedere i file tracciati in verde, non tracciati in rosso
+	git status
+-dalla console,e copia file .gitignore
+	echo "incolla testo" > .gitignore
+-dalla cosole, e in cartella directory
+	rm -r nomefile
+-dalla console,aggiungere alla commit per avere la tracciabilità,dopo con git status saranno verdi
+	git add . ---> con "." si intende tutta la cartella in cui ci si trova, in alternativa metti nomefile
+		a questo punto i file attendono per andare nella repository
+-dalla console, aggiunge alla repository
+	git commit "initial commit"
+
+-dalla console, dati porsonali
+	git log
+
+--push repository--
+--
+solo quando si crea la destinazione remota su GITHUB
+-dalla console
+	'copia e incolla la roba su git hub'
+--
+-dalla console, step finale per aggiornare la destinazione finale su GITHUB
+	git push -u origin master
+
+--modifica file--
+-git status -->rossi
+-git add -->verdi
+-git diff --staged --> vediamo la modifica che è stata effettuata ai file
+-git commit -m "nomedellamodifica"
+-git push -u origin master
+
+
+--https://rogerdudler.github.io/git-guide/index.it.html
+Se vuoi in alternativa eliminare tutti i cambiamenti e commits fatti in locale,
+recupera l'ultima versione dal server e fai puntare il tuo master branch a quella versione in questo modo
+-git fetch origin
+-git reset --hard origin/master
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+--Test 1 -->alcuni concetti iniziali approssimativi
+
+--Test 2 -->esercizio con scanner abbastanza stupido
+
+--Test 3 -->metodi loops e altro
+	-tutte le variabili numeriche da boolean a double
+	-proprietà dei numeri: infinito e NaN
+	-operazioni matematiche
+	-metodi matematica
+	-metodo charAt
+	-.format, .lenght, .contains, .indexOf e altri metodi delle stringhe
+	-operatori logici
+	-while e for loop
+	-"vita" una variabile ovvero fino a dove essa è definita, pizza kebab
+	-keyword break
+	-introduzione arrays e metodi .toString .deepToString (array 2D tipo sottoinsiemi
+	
+--Test 4 -->esercizio calcolo area triangolo abbastanza stupido
+
+--Test 5 -->esercizio "password"
+
+--Test 6 -->esercizio con loop annidati e switch-case
+
+--Test 7 -->esercizio "password" e do-while loop chiede la pw fino a quando non è corretta
+
+--Test 8 -->arrays
+	-esercizio che prende da tastiera il valore di ogni elemento e li stampa
+	-algoritmo cerca elemento array
+	-metodo Array.sort che li ordina in modo crescente
+	-metodo Array.equals che compara se due array sono uguali
+	-metodo Array.fill
+	-array 2d con sottinsiemi, Array.deepTostring
+	-algoritmo stampa array 2d 
+	
+--Test 9 -->ArrayList
+	-come aggiungere valori alla lista nomelista.add(), eliminare tutto dalla lista nomelista.clear
+	-nomelista.contains
+	-convertire una lista in array e dopo tostring, Arrays.toString(nomelista.toArray())
+	-getter e setter lista, nomelista.get(i) nomelista.set(i, x)
+	-for each loop per liste
+	-liste 2d, abbastanza complicate
+	-convertire lista in un array
+	-ordinare in modo crescente una lista
+
+--Test 10 -->OOP, programmazione ad oggetti
+ -classe Test10
+	-cosa significa programmare ad oggetti
+	-classe e fields, classe struttura degli oggetti e fields caratteristiche
+	-metodi per richiamare getter e setter, encapsulation 
+	-private e public
+ -classe User
+	-stringhe pubbliche accessibili stringhe private modificabili solo con setter e getter
+	
+--Test 11 -->pt2
+ -classe Test11
+	-metodo per aggiungere utenti da lista nome e cognome
+	-metodo statico (riferito alla classe) e non statico (riferito all'oggetto o istanza)
+
+--Test 12 -->
+ -classe User12 
+	-differenza tra void e senza void
+	-overload metodo
+	-override di metodi della classe radice, totring ashcode equals
+	-metodo personalizzato per cercare nella lista utenti e trovare a che index si trova, e metodo che cerca via nomeoggetto
+	-metodo che ritorna il nome oggetto
+	
+
+--Test 13 -->
+ -classe Test13
+ -classe User
+	-keyword abstract, metodo che non ha corpo e deve essere ereditato nella sottoclasse
+	-enum, tipo una caratteristica
+ -classe Sudent
+	-ereditarietà
+	-metodo virtuale(sovrascrivibile), implicito e che metodi non sono virtuali
+	-default constructor modificato
+	-override metodo da classe user e interfaccia
+ -classe Teacher
+	-custom constructor
+ -interfaccia Parlare
+	-nel commento come usare bene l'interfaccia
+
