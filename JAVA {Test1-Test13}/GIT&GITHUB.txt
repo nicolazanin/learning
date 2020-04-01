@@ -44,6 +44,10 @@ solo quando si crea la destinazione remota su GITHUB
 -git commit -m "nomedellamodifica"
 -git push -u origin master
 
+--pull--
+se faccio una modifica da github e la vogio aggiungere al pc 
+-git pull
+
 
 --https://rogerdudler.github.io/git-guide/index.it.html
 Se vuoi in alternativa eliminare tutti i cambiamenti e commits fatti in locale,
