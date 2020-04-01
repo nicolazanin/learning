@@ -38,8 +38,10 @@ public class User12 {
     sopra c'è un metodo con public static void e sotto un metodo con public string (anche int e che dir si voglia)la differenza tra i due è che :
     in quello con void non si usa la keyword return, con void il metodo ritornaun valore se richiamato nel calling program, sopra per esempio
     stampa quello che viene indicato sopra.
-    nel metodo sotto invece il metodo ritorna una stringa per stampare questa bisogna "metterla" denro un sout.
-    sotto è spiegato anche come funziona l' overload.
+    nel metodo sotto invece il metodo ritorna una stringa per stampare questa bisogna "metterla" denro un Syste.out.println(variabile).
+    -un metodo void: esegue la sua task che gli assegnamo e poi termina
+    -un metodo che ritorna un valore: esegue la task, ritorna un valore dove lui è stato chiamato, per questa ragione va assegnata ad una variabile
+     oppure stamparla dentro un Syste.out.println(variabile).
     */
     
     //overload che ci consente di “sovraccaricare” un metodo di una classe con diverse varianti, in base ai parametri passati come riferimento.
