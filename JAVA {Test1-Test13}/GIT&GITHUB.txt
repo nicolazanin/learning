@@ -49,6 +49,28 @@ solo quando si crea la destinazione remota su GITHUB
 se faccio una modifica da github e la vogio aggiungere al pc 
 -git pull
 
+--branch--
+-creare una nuova branch
+	git branch <nomebranch>
+-vedere che branch ci sono, a sta per all
+	git branch -a
+-selezionare una branch 
+	git checkout <nomebranch>
+a questo punto abbiamo creato una nuova branch e l'abbiamo selezionata da qui possiamo creare nuovi files modificarli ecc
+senza cambiare quello che c'è nella maste branch
+-eliminare la branch, tornare alla branch master
+	git checkout master
+-creare e andare nella nuova branch, b sta per branch
+	git checkout -b <nomebranch>
+-eliminare branch, D delete
+	git branch -D <nomeb>
+-merge delle branch, le branch si uniscono e si immettono nella master
+-dalla master 
+	git merge <nomeb>
+-in caso di conflitto, ovvero quando vngono effettuate variazione nella master e il nostro merge tocca gli stessi parametri
+bisogna modificare il file e proseguire con git add ., git commit, compare un menu e premi q, enter
+	
+	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
 Se vuoi in alternativa eliminare tutti i cambiamenti e commits fatti in locale,
