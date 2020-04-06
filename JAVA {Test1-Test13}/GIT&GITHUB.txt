@@ -24,9 +24,10 @@
 		a questo punto i file attendono per andare nella repository
 -dalla console, aggiunge alla repository
 	git commit "initial commit"
-
 -dalla console, dati porsonali
 	git log
+-dalla console, per uscire da un menu
+ 	q
 
 --push repository--
 --
