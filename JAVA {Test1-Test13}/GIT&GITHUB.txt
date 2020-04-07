@@ -12,7 +12,7 @@
 -dalla console, per vedere il percorso cartelle
 	pwd
 -dalla console, per uscire da un menu
- 	q
+ 	q	in aggiunta anche : (prima)
 -dalla console, vedere la lista di oggetti nella cartella in cui mi trovo
 	ls
 -dalla console, per vedere i file della cartella, a sta per all
@@ -40,6 +40,10 @@
 	git commit "initial commit"
 -dalla console, dati porsonali
 	git log
+-dalla console, mostra le 'destinazioni' remote, origin è il nome del remote
+	git remote
+-dalla console, mostra anche l'url 
+	git remote -v
 
 --push repository--
 --
@@ -95,6 +99,12 @@ gli issues su github sono consigli degli utenti riguarto ad un file sulla tua re
 il proprietario può chiudere un issue modificando il file e scrivendo nel commenti della commit fixes #numeroIssue
 ogni cambiamento ha un suo hash code quindi ci si può riferire ad un cambiamento (intendo commit) incollando il codice nella issue
 e github mostrerà automaticamente il cambimento
+
+--clonare una repository su github --
+-dopo aver creato una repository su git hub copiare il file https
+-dalla console, clonerò la directory di github sul mio computer, mi devo posizionare dove voglio che quetsta venga clonata
+	git clone https://ecc.git
+
 	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
