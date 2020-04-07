@@ -77,6 +77,11 @@ mie modifiche, vede le modifiche, se decide di accettarle premerà merge pull re
  
 --eliminare repository su github--
 icona impostazioni della repository e andare sotto su danger zone
+
+--issues su github--
+gli issues su github sono consigli degli utenti riguarto ad un file sulla tua reposiory.
+il proprietario può chiudere un issue modificando il file e scrivendo nel commenti della commit fixes #numeroIssue
+ogni cambiamento ha un suo hash code quindi ci si può riferire ad un cambiamento incollando il codice nella issue e github mostrerà automaticamente il cambimento
 	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
