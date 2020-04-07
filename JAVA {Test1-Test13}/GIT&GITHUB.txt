@@ -9,10 +9,24 @@
 	git init
 
 --comandi--
--dalla console, per vedere i file della cartella, a sta per all
-	ls -a	
 -dalla console, per vedere il percorso cartelle
 	pwd
+-dalla console, per uscire da un menu
+ 	q
+-dalla console, vedere la lista di oggetti nella cartella in cui mi trovo
+	ls
+-dalla console, per vedere i file della cartella, a sta per all
+	ls -a
+-dalla console, per vedere i file della cartella, vedo tutte le info su quei file
+	ls -all
+-dalla console, aprire la cartella
+	open
+-per riferirmi ad una cartella superiore uso 
+	..	
+-per riferirmi ad una cartella in cui mi trovo
+	.	
+-per auto compilare si usa il comando tab, esempio: Des+tab --> Desktop/
+
 -dalla console, vedere i file tracciati in verde, non tracciati in rosso
 	git status
 -dalla console,e copia file .gitignore
@@ -26,8 +40,6 @@
 	git commit "initial commit"
 -dalla console, dati porsonali
 	git log
--dalla console, per uscire da un menu
- 	q
 
 --push repository--
 --
@@ -81,7 +93,8 @@ icona impostazioni della repository e andare sotto su danger zone
 --issues su github--
 gli issues su github sono consigli degli utenti riguarto ad un file sulla tua reposiory.
 il proprietario può chiudere un issue modificando il file e scrivendo nel commenti della commit fixes #numeroIssue
-ogni cambiamento ha un suo hash code quindi ci si può riferire ad un cambiamento incollando il codice nella issue e github mostrerà automaticamente il cambimento
+ogni cambiamento ha un suo hash code quindi ci si può riferire ad un cambiamento (intendo commit) incollando il codice nella issue
+e github mostrerà automaticamente il cambimento
 	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
