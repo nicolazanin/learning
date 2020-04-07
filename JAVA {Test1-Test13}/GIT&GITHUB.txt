@@ -69,7 +69,14 @@ senza cambiare quello che c'è nella maste branch
 	git merge <nomeb>
 -in caso di conflitto, ovvero quando vngono effettuate variazione nella master e il nostro merge tocca gli stessi parametri
 bisogna modificare il file e proseguire con git add ., git commit, compare un menu e premi q, enter
-	
+
+--fork & pull request--
+creare un duplicato della master branch e delle sue branch clicca su fork una volta entrato sulla repository desiderata, su 
+github faccio il fork del progetto, lo modifico e poi eseguouna pull request ovvero notifico il proprietario del progetto delle
+mie modifiche, vede le modifiche, se decide di accettarle premerà merge pull request
+ 
+--eliminare repository su github--
+icona impostazioni della repository e andare sotto su danger zone
 	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
