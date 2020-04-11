@@ -1,0 +1,17 @@
+NetBeans
+-for+tab  --> for loop (anche con if)
+-sout+tab --> System.out.println();
+-ctrl+shift+enter --> apre/chiude la pagina di programmazione a schermo intero
+
+Eclipse
+-for+ctrl+spazio  --> for loop (anche con if)
+-sout+ctrl+spazio --> System.out.println();
+
+entrambi
+-control x   --> taglia
+-control c/v --> copia/icolla
+-control a   --> seleziona tutto
+-control s   --> salva
+-control h   --> cerca la parola in tutti i files
+-control f   --> find, cerca il testo che vuoi e lo cambi in un colpo
+-control     --> tocca il metodo dal calling program, ti teletrasporta sul metodo
