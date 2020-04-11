@@ -105,6 +105,12 @@ e github mostrerà automaticamente il cambimento
 -dalla console, clonerò la directory di github sul mio computer, mi devo posizionare dove voglio che quetsta venga clonata
 	git clone https://ecc.git
 
+--VIM--
+-una parte paurosa dove si deve aggiunger un messaggio di una commit, magari se dimantichi di dare il nome alla commit
+-due modalità normal mode e insert mode, si entra in isert usando il tasto I, torna in normale esc
+-in insert scriviamo il commento e la commit
+-nella normale ci muoviamo e possiamo uscire dal vim con :x
+
 	 
 
 --https://rogerdudler.github.io/git-guide/index.it.html
