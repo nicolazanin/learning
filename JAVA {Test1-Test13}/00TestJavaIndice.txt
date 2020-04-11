@@ -54,8 +54,11 @@
 --Test 11 -->pt2
  -classe Test11
 	-metodo per aggiungere utenti da lista nome e cognome
-	-metodo statico (riferito alla classe) e non statico (riferito all'oggetto o istanza)
-
+	-metodo statico (riferito alla classe) e non statico (riferito all'oggetto o istanza):
+	 ovvero un metodo statico (o una variabile statica) essendo legate ad una classe possono essere invocati dal main method
+	 con nomeMetodo();, mentre un metodo non statico è legato all' istanza e quindi è legato all'oggetto, per invocarlo dal 
+	 main nomeOgetto.nomeMetodo();
+	 
 --Test 12 -->
  -classe User12 
 	-differenza tra void e senza void
@@ -64,7 +67,6 @@
 	-metodo personalizzato per cercare nella lista utenti e trovare a che index si trova, e metodo che cerca via nomeoggetto
 	-metodo che ritorna il nome oggetto
 	
-
 --Test 13 -->
  -classe Test13
  -classe User
@@ -80,3 +82,8 @@
  -interfaccia Parlare
 	-nel commento come usare bene l'interfaccia
 
+--Test 14 -->
+	-keyword this, serve a chiarire le variabili della classe e le variabili del metodo
+	-try catch finally, prova ad eseguire un codice (try), se si verifica l'errore esegue codice (catch), altro codice che si 
+	esegue nonostatnte l'errore
+	-recursive methods, metodo con all'interno il metodo stesso 
