@@ -1,0 +1,8 @@
+20;9;Analisi I
+17;9;Fisica I
+22;9;Fondamenti di Informatica
+23;6;Geometria
+26;6;Chimica
+30;3;Igiene
+31;3;Nani da giardino
+25;9;Analisi II
