@@ -17,11 +17,10 @@ public class EsercizioLibretto {
         stampaLibretto(l);
         double media = calcolaMedia(l);
         System.out.format("Voto medio degli esami passati: %.2f\n ", media);
-        
     }
+    
     public static Libretto preparaLibretto(String imput) {
-
-        String dati[] = imput.split("\n");
+        String[] dati = imput.split("\n");
         Libretto libretto = new Libretto();
         System.out.print("nome? ");
         String nome = LibreriaFondamenti.leggiStringa();
@@ -77,7 +76,7 @@ public class EsercizioLibretto {
             }
         }
         if (contatore == 0) {
-            return -1;
+            return 0;
         }
         double media = sommaEsami/sommaCfu;
         return media;

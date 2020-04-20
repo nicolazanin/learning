@@ -10,5 +10,4 @@ public class Esame {
     public int voto;
     public int cfu;
     public final int VOTO_MINIMO = 18;
-    
 }
