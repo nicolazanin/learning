@@ -14,6 +14,7 @@ public class Impiccato {
         int x = 0;
         String parola;
         do {
+            System.out.print("digita la parola da indovinare ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             parola = LibreriaFondamenti.leggiStringa().toUpperCase();
             if (!parola.equals("FINE")) {
                 char[] corretto = new char[parola.length()];
@@ -29,13 +30,15 @@ public class Impiccato {
                 boolean fine = false;
                 int contaErrori = 0;
                 do {
+                    String letteraT;
+                    do {
+                        for (int i = 0; i < impiccato.length; i++) {
+                            System.out.print(impiccato[i] + " ");
+                        }
+                        System.out.print("   digita la lettera: ");
+                        letteraT = LibreriaFondamenti.leggiStringa().toUpperCase();
+                    } while (!(letteraT.length() == 1));
 
-                    for (int i = 0; i < impiccato.length; i++) {
-                        System.out.print(impiccato[i] + " ");
-                    }
-
-                    System.out.print("   digita la lettera: ");
-                    String letteraT = LibreriaFondamenti.leggiStringa().toUpperCase();
                     char lettera = letteraT.charAt(0);
 
                     boolean uguale = false;
@@ -67,7 +70,13 @@ public class Impiccato {
                         }
                     }
                 } while (!fine && (contaErrori < 10));
-
+                
+                if (contaErrori < 10) {
+                    System.out.println("Hai vinto! :)ciao");
+                }
+                else{
+                    System.out.println("Hai perso! :(");
+                }
                 System.out.println("la parola è: " + parola);
                 parole[x] = parola;
                 errori[x] = contaErrori;
