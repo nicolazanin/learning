@@ -114,41 +114,36 @@ public class GameOfLife {
 
         do {
             boolean nero;
-            for (int i = 5; i < d - 5; i++) { //riga
-                for (int j = 5; j < d - 5; j++) { //colonna
-                    nero = LibreriaFondamenti.puntoAcceso(j, i);
-                    int contaNero;
-
-                    if (nero) { //condizione se cella viva 
-                        contaNero = -1; //perchè parto escludendo la cella presa in considerazione 
-
-                        for (int k = i - 1; k <= i + 1; k++) {//
-                            for (int l = j - 1; l <= j + 1; l++) {
-                                if (LibreriaFondamenti.puntoAcceso(l, k)) {
-                                    contaNero++;
-                                }
+            for (int i = 5; i < d - 5; i++) { //ciclo che analizza ogni y di ogni cella della finestra
+                for (int j = 5; j < d - 5; j++) { //ciclo che analizza ogni x di ogni cella della finestra
+                    
+                    nero = LibreriaFondamenti.puntoAcceso(j, i); //la cella che analizzo e nera o bianca?
+                    
+                    //INIZIO codice conta celle nere attorno alle cella che analizzo 
+                    int contaNero = 0; //contatore celle nere 
+                    for (int k = i - 1; k <= i + 1; k++) { //ciclo che analizza ogni y di ogni cella attorno alla cella da analizzare
+                        for (int l = j - 1; l <= j + 1; l++) { //ciclo che analizza ogni x di ogni cella attorno alla cella da analizzare
+                            if (LibreriaFondamenti.puntoAcceso(l, k)) { //se il punto è nero aumenta il contatore di uno
+                                contaNero++;
                             }
-                        }//
-                        if (contaNero != 2 && contaNero != 3) {
+                        }
+                    }
+                    //FINE
+                    
+                    //INIZIO codice che stabilisce se quella è una cella nascente o morente 
+                    if (nero) { //condizione se la cella che analizzo è nera
+                        contaNero = contaNero - 1; // questo perchè escludo la cella che analizzo (cella centrale,con coordinate i; j) 
+                        if (contaNero != 2 && contaNero != 3) {// la cella muore se circondata da meno di 2 celle nere o più di 3 celle 
                             LibreriaFondamenti.spegniPunto(j, i);
                         }
-                    } else { //condizione se cella morta
-                        contaNero = 0; //parto da zero perchè la cella che prendo in considerazione è bianca 
-
-                        for (int k = i - 1; k <= i + 1; k++) {//
-                            for (int l = j - 1; l <= j + 1; l++) {
-                                if (LibreriaFondamenti.puntoAcceso(l, k)) {
-                                    contaNero++;
-                                }
-                            }
-                        }//
-                        if (contaNero == 3) {
+                    }
+                    else { //condizione se cella morta
+                        if (contaNero == 3) { //una cella nasce se e solo se circondata da 3 celle vive (non di più, non di meno)
                             LibreriaFondamenti.accendiPunto(j, i);
                         }
                     }
-
+                    //FINE
                 }
-
             }
 
             LibreriaFondamenti.dormi(50);
