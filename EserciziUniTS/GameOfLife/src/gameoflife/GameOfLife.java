@@ -10,18 +10,21 @@ public class GameOfLife {
 
     public static void main(String[] args) {
         System.out.println("LIFE GAME");
-        System.out.println("0 - linea\n1 - lampo\n2 - blocco\n3 - glider\n4 - rospo\n5 - barca\n6 - esplosione");
-        System.out.print("digita un numero: ");
-        int numero = LibreriaFondamenti.leggiIntero();
+        System.out.println("0 - linea\n1 - lampo\n2 - blocco\n3 - glider\n4 - rospo\n5 - barca\n6 - acorn\n7 - Gosper glider gun");
+        int numero;
+        do {
+            System.out.print("digita un numero: ");
+            numero = LibreriaFondamenti.leggiIntero();
+        } while (!(numero < 8));
 
         int d = LibreriaFondamenti.DIMENSIONE_FINESTRA;
 
         LibreriaFondamenti.mostraFinestra();
-        
+
         if (numero == 0) {
             LibreriaFondamenti.accendiPunto(50, 50);
             LibreriaFondamenti.accendiPunto(51, 50);
-            LibreriaFondamenti.accendiPunto(49, 50); 
+            LibreriaFondamenti.accendiPunto(49, 50);
             LibreriaFondamenti.accendiPunto(48, 50);
             LibreriaFondamenti.accendiPunto(52, 50);
         }
@@ -67,8 +70,45 @@ public class GameOfLife {
             LibreriaFondamenti.accendiPunto(55, 50);
             LibreriaFondamenti.accendiPunto(56, 50);
         }
-        
-        
+        if (numero == 7) {
+            LibreriaFondamenti.accendiPunto(19, 20);
+            LibreriaFondamenti.accendiPunto(20, 20);
+            LibreriaFondamenti.accendiPunto(19, 21);
+            LibreriaFondamenti.accendiPunto(20, 21);
+            LibreriaFondamenti.accendiPunto(29, 21);
+            LibreriaFondamenti.accendiPunto(29, 20);
+            LibreriaFondamenti.accendiPunto(29, 22);
+            LibreriaFondamenti.accendiPunto(30, 23);
+            LibreriaFondamenti.accendiPunto(30, 19);
+            LibreriaFondamenti.accendiPunto(31, 24);
+            LibreriaFondamenti.accendiPunto(31, 18);
+            LibreriaFondamenti.accendiPunto(32, 24);
+            LibreriaFondamenti.accendiPunto(32, 18);
+            LibreriaFondamenti.accendiPunto(33, 21);
+            LibreriaFondamenti.accendiPunto(34, 23);
+            LibreriaFondamenti.accendiPunto(34, 19);
+            LibreriaFondamenti.accendiPunto(35, 21);
+            LibreriaFondamenti.accendiPunto(35, 20);
+            LibreriaFondamenti.accendiPunto(35, 22);
+            LibreriaFondamenti.accendiPunto(36, 21);
+            LibreriaFondamenti.accendiPunto(39, 20);
+            LibreriaFondamenti.accendiPunto(39, 19);
+            LibreriaFondamenti.accendiPunto(39, 18);
+            LibreriaFondamenti.accendiPunto(40, 20);
+            LibreriaFondamenti.accendiPunto(40, 19);
+            LibreriaFondamenti.accendiPunto(40, 18);
+            LibreriaFondamenti.accendiPunto(41, 17);
+            LibreriaFondamenti.accendiPunto(41, 21);
+            LibreriaFondamenti.accendiPunto(43, 17);
+            LibreriaFondamenti.accendiPunto(43, 21);
+            LibreriaFondamenti.accendiPunto(43, 16);
+            LibreriaFondamenti.accendiPunto(43, 22);
+            LibreriaFondamenti.accendiPunto(53, 18);
+            LibreriaFondamenti.accendiPunto(54, 18);
+            LibreriaFondamenti.accendiPunto(54, 19);
+            LibreriaFondamenti.accendiPunto(53, 19);
+        }
+
         LibreriaFondamenti.aggiornaDisegno();
         LibreriaFondamenti.dormi(3000);
 
@@ -111,9 +151,9 @@ public class GameOfLife {
 
             }
 
-            LibreriaFondamenti.dormi(10);
+            LibreriaFondamenti.dormi(50);
             LibreriaFondamenti.aggiornaDisegno();
-            
+
         } while (true);
     }
 
