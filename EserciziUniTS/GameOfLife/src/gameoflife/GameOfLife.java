@@ -10,12 +10,12 @@ public class GameOfLife {
 
     public static void main(String[] args) {
         System.out.println("LIFE GAME");
-        System.out.println("0 - linea\n1 - lampo\n2 - blocco\n3 - glider\n4 - rospo\n5 - barca\n6 - acorn\n7 - Gosper glider gun");
+        System.out.println("0 - linea\n1 - lampo\n2 - blocco\n3 - glider\n4 - rospo\n5 - barca\n6 - acorn\n7 - Gosper glider gun\n8 - random");
         int numero;
         do {
             System.out.print("digita un numero: ");
             numero = LibreriaFondamenti.leggiIntero();
-        } while (!(numero < 8));
+        } while (!(numero <= 8));
 
         int d = LibreriaFondamenti.DIMENSIONE_FINESTRA;
 
@@ -108,17 +108,30 @@ public class GameOfLife {
             LibreriaFondamenti.accendiPunto(54, 19);
             LibreriaFondamenti.accendiPunto(53, 19);
         }
+        if (numero == 8) {
+            for (int i = 0; i < 2000; i++) {
+                int xCasuale;
+                int yCasuale;
+                do {
+                    xCasuale = LibreriaFondamenti.generaNumeroCasuale(99);
+                } while (xCasuale < 1);
+                do {
+                    yCasuale = LibreriaFondamenti.generaNumeroCasuale(99);
+                } while (yCasuale < 1);
+                LibreriaFondamenti.accendiPunto(xCasuale, yCasuale);
+            }
+        }
 
         LibreriaFondamenti.aggiornaDisegno();
         LibreriaFondamenti.dormi(3000);
 
         do {
             boolean nero;
-            for (int i = 5; i < d - 5; i++) { //ciclo che analizza ogni y di ogni cella della finestra
-                for (int j = 5; j < d - 5; j++) { //ciclo che analizza ogni x di ogni cella della finestra
-                    
+            for (int i = 1; i < d-1 ; i++) { //ciclo che analizza ogni y di ogni cella della finestra
+                for (int j = 1; j < d-1 ; j++) { //ciclo che analizza ogni x di ogni cella della finestra
+
                     nero = LibreriaFondamenti.puntoAcceso(j, i); //la cella che analizzo e nera o bianca?
-                    
+
                     //INIZIO codice conta celle nere attorno alle cella che analizzo 
                     int contaNero = 0; //contatore celle nere 
                     for (int k = i - 1; k <= i + 1; k++) { //ciclo che analizza ogni y di ogni cella attorno alla cella da analizzare
@@ -129,15 +142,14 @@ public class GameOfLife {
                         }
                     }
                     //FINE
-                    
+
                     //INIZIO codice che stabilisce se quella è una cella nascente o morente 
                     if (nero) { //condizione se la cella che analizzo è nera
                         contaNero = contaNero - 1; // questo perchè escludo la cella che analizzo (cella centrale,con coordinate i; j) 
                         if (contaNero != 2 && contaNero != 3) {// la cella muore se circondata da meno di 2 celle nere o più di 3 celle 
                             LibreriaFondamenti.spegniPunto(j, i);
                         }
-                    }
-                    else { //condizione se cella morta
+                    } else { //condizione se cella morta
                         if (contaNero == 3) { //una cella nasce se e solo se circondata da 3 celle vive (non di più, non di meno)
                             LibreriaFondamenti.accendiPunto(j, i);
                         }
